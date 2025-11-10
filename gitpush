@@ -1,0 +1,19 @@
+#!/bin/bash
+# Script otomatis commit + push
+
+if [ -z "$1" ]; then
+  echo "⚠️  Tolong isi pesan commit, contoh:"
+  echo "./gitpush \"update project\""
+  exit 1
+fi
+
+echo "🌀 Menambahkan semua file..."
+git add .
+
+echo "💬 Commit dengan pesan: $1"
+git commit -m "$1"
+
+echo "🚀 Push ke GitHub..."
+git push -u origin main
+
+echo "✅ Berhasil di-push!"
