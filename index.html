@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fernando</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" href="images/favicon.jpg">
+
+</head>
+<body class="dark-mode">
+
+    <header>
+        <a href="#home" class="logo">Fernando</a>
+
+        <div class="nav-tools">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-nav-link="home">Home</a></li>
+                    <li><a href="#project" class="nav-link" data-nav-link="project">Project</a></li>
+                    <li><a href="#contact" class="nav-link" data-nav-link="contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+                <i data-lucide="sun" id="theme-icon-sun" style="display: none;"></i>
+                <i data-lucide="moon" id="theme-icon-moon"></i>
+            </button>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <i data-lucide="menu" id="menu-icon-open"></i>
+                <i data-lucide="x" id="menu-icon-close" style="display: none;"></i>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#home" class="nav-link active" data-nav-link="home">Home</a></li>
+            <li><a href="#project" class="nav-link" data-nav-link="project">Project</a></li>
+            <li><a href="#contact" class="nav-link" data-nav-link="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <p class="hero-subtitle reveal">Halo, saya Fernando Emmanuel</p>
+                        <h1 class="reveal reveal-delay-1">Software Engineer & Web Developer</h1>
+                        <p class="reveal reveal-delay-2">
+                            Saya berspesialisasi dalam membangun (dan sesekali mendesain) 
+                            pengalaman digital yang luar biasa. Saat ini, saya fokus 
+                            membangun produk yang mudah diakses dan berpusat pada pengguna.
+                        </p>
+                        <a href="#project" class="btn reveal reveal-delay-3" data-nav-link="project">Lihat Proyek Saya</a>
+                    </div>
+                    
+                    <div class="cube-container">
+                        <div class="cube-wrapper" id="cube-wrapper">
+                            <div class="cube">
+                                <div class="cube-face front"><img id="cube-img-front" src=""></div>
+                                <div class="cube-face back"><img id="cube-img-back" src=""></div>
+                                <div class="cube-face right"><img id="cube-img-right" src=""></div>
+                                <div class="cube-face left"><img id="cube-img-left" src=""></div>
+                                <div class="cube-face top"><img id="cube-img-top" src=""></div>
+                                <div class="cube-face bottom"><img id="cube-img-bottom" src=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="page">
+            <div class="container">
+                <h2 class="reveal">Proyek Pilihan Saya</h2>
+                <p class="reveal reveal-delay-1">Beberapa hal yang telah saya bangun baru-baru ini.</p>
+
+                <div class="project-grid">
+                    <div class="project-card reveal">
+                        <img src="https://placehold.co/600x400/0078d4/ffffff?text=Proyek+1" alt="Placeholder Proyek 1">
+                        <div class="project-card-content">
+                            <h3>Nama Proyek A</h3>
+                            <p>Deskripsi singkat tentang proyek ini, teknologi yang digunakan, dan tantangan yang dihadapi.</p>
+                            <div class="project-card-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card reveal reveal-delay-1">
+                        <img src="https://placehold.co/600x400/4a5568/ffffff?text=Proyek+2" alt="Placeholder Proyek 2">
+                        <div class="project-card-content">
+                            <h3>Nama Proyek B</h3>
+                            <p>Proyek eksplorasi visualisasi data menggunakan D3.js dengan backend Python.</p>
+                            <div class="project-card-tags">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                                <span>WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-2">
+                        <img src="https://placehold.co/600x400/00a1f1/ffffff?text=Proyek+3" alt="Placeholder Proyek 3">
+                        <div class="project-card-content">
+                            <h3>Nama Proyek C</h3>
+                            <p>Aplikasi mobile cross-platform dengan Flutter untuk tracking kebiasaan harian.</p>
+                            <div class="project-card-tags">
+                                <span>Flutter</span>
+                                <span>Dart</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page">
+            <div class="container">
+                <h2 class="reveal">Info Kontak</h2>
+                <p class="reveal reveal-delay-1">
+                    Anda dapat terhubung dengan saya melalui platform berikut.
+                    Saya menantikan kabar dari Anda!
+                </p>
+
+                <div class="social-links-grid reveal reveal-delay-2">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-link-card">
+                        <i data-lucide="message-circle"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.instagram.com/cuicakks/" target="_blank" rel="noopener noreferrer" class="social-link-card">
+                        <i data-lucide="instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-link-card">
+                        <i data-lucide="linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/cicakk2" target="_blank" rel="noopener noreferrer" class="social-link-card">
+                        <i data-lucide="github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="reveal">
+        &copy; <span id="current-year"></span> Fernando. Dibuat dengan AI
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
