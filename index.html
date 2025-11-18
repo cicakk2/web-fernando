@@ -58,7 +58,7 @@
                             pengalaman digital yang luar biasa. Saat ini, saya fokus 
                             membangun produk yang mudah diakses dan berpusat pada pengguna.
                         </p>
-                        <a href="#project" class="btn reveal reveal-delay-3" data-nav-link="project">Lihat Proyek Saya</a>
+                        <a href="#featured-preview" class="btn reveal reveal-delay-3" onclick="document.getElementById('featured-preview').scrollIntoView({behavior: 'smooth'}); return false;">Lihat Karya Saya</a>
                     </div>
                     
                     <div class="cube-container">
@@ -74,33 +74,73 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="featured-preview" class="featured-section reveal">
+                    <div class="featured-header">
+                        <h2>Proyek Unggulan</h2>
+                        <p>Salah satu karya terbaik yang pernah saya kerjakan.</p>
+                    </div>
+
+                    <div class="project-card reveal reveal-delay-1">
+                        <img src="https://placehold.co/1920x1080/0078d4/ffffff?text=Featured+Project" alt="Featured Project">
+                        <div class="project-card-content">
+                            <h3>E-Commerce Dashboard</h3>
+                            <p>
+                                Sebuah platform manajemen dashboard yang komprehensif untuk pelaku UMKM. 
+                                Dilengkapi dengan analitik real-time, manajemen inventaris otomatis, 
+                                dan integrasi payment gateway.
+                            </p>
+                            <div class="project-card-tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>Supabase</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="view-all-container reveal reveal-delay-2">
+                        <a href="#project" class="btn-outline" data-nav-link="project">
+                            Lihat Semua Portofolio <i data-lucide="arrow-right" style="width: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="project" class="page">
             <div class="container">
-                <h2 class="reveal">Proyek Pilihan Saya</h2>
-                <p class="reveal reveal-delay-1">Beberapa hal yang telah saya bangun baru-baru ini.</p>
+                <h2 class="reveal">Daftar Portofolio</h2>
+                <p class="reveal reveal-delay-1" style="margin-bottom: 3rem;">
+                    Kumpulan proyek yang telah saya kerjakan dengan berbagai teknologi.
+                </p>
 
                 <div class="project-grid">
                     <div class="project-card reveal">
-                        <img src="https://placehold.co/600x400/0078d4/ffffff?text=Proyek+1" alt="Placeholder Proyek 1">
+                        <img src="https://placehold.co/1600x900/2a2a2a/ffffff?text=Sistem+Keuangan" alt="Project 1">
                         <div class="project-card-content">
-                            <h3>Nama Proyek A</h3>
-                            <p>Deskripsi singkat tentang proyek ini, teknologi yang digunakan, dan tantangan yang dihadapi.</p>
+                            <h3>Sistem Manajemen Keuangan</h3>
+                            <p>
+                                Aplikasi web untuk mencatat dan menganalisis arus kas perusahaan. 
+                                Menggunakan algoritma prediksi sederhana untuk forecasting pengeluaran 
+                                bulan berikutnya.
+                            </p>
                             <div class="project-card-tags">
                                 <span>React</span>
                                 <span>Node.js</span>
-                                <span>Firebase</span>
+                                <span>PostgreSQL</span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="project-card reveal reveal-delay-1">
-                        <img src="https://placehold.co/600x400/4a5568/ffffff?text=Proyek+2" alt="Placeholder Proyek 2">
+                        <img src="https://placehold.co/1600x900/4a5568/ffffff?text=Data+Vis" alt="Project 2">
                         <div class="project-card-content">
-                            <h3>Nama Proyek B</h3>
-                            <p>Proyek eksplorasi visualisasi data menggunakan D3.js dengan backend Python.</p>
+                            <h3>Visualisasi Data Gempa</h3>
+                            <p>
+                                Proyek eksplorasi visualisasi data menggunakan D3.js yang memetakan 
+                                data gempa bumi secara real-time dari API BMKG/USGS ke dalam globe interaktif.
+                            </p>
                             <div class="project-card-tags">
                                 <span>Python</span>
                                 <span>D3.js</span>
@@ -110,10 +150,13 @@
                     </div>
 
                     <div class="project-card reveal reveal-delay-2">
-                        <img src="https://placehold.co/600x400/00a1f1/ffffff?text=Proyek+3" alt="Placeholder Proyek 3">
+                        <img src="https://placehold.co/1600x900/00a1f1/ffffff?text=Habit+Tracker" alt="Project 3">
                         <div class="project-card-content">
-                            <h3>Nama Proyek C</h3>
-                            <p>Aplikasi mobile cross-platform dengan Flutter untuk tracking kebiasaan harian.</p>
+                            <h3>Habit Tracker Mobile</h3>
+                            <p>
+                                Aplikasi mobile cross-platform yang membantu pengguna membangun 
+                                kebiasaan positif dengan metode gamifikasi dan statistik mingguan.
+                            </p>
                             <div class="project-card-tags">
                                 <span>Flutter</span>
                                 <span>Dart</span>
@@ -154,7 +197,6 @@
             </div>
         </section>
     </main>
-
     <footer class="reveal">
         &copy; <span id="current-year"></span> Fernando. Dibuat dengan AI
     </footer>
